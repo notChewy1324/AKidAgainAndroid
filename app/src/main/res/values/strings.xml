@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AKidAgainAndroid</string>
+    <string name="mainlogo">MainLogo</string>
+    <string name="SignUp">SignUpButton</string>
 </resources>
