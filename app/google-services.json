@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "908063988771",
+    "firebase_url": "https://a-kid-again-49800.firebaseio.com",
+    "project_id": "a-kid-again-49800",
+    "storage_bucket": "a-kid-again-49800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908063988771:android:b1b2465247be567bc56596",
+        "android_client_info": {
+          "package_name": "com.notchewy1324.akidagainandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908063988771-euahq80cvtjua35kh2orolvis58nsdnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCczbmuawqFGgWoovWEucNIbJPjmJ8A39c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908063988771-euahq80cvtjua35kh2orolvis58nsdnr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "908063988771-ebs9q0q97njgj8tdjq4rrpie2brba5gb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.NotChewy1324.AKidAgain.Quote"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
