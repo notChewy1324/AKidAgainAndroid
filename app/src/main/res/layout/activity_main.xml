@@ -37,7 +37,7 @@
         android:background="#FFFFFF"
         android:text="@string/LoginButton1"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/Sign Up"
+        app:layout_constraintBottom_toTopOf="@id/Sign Up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

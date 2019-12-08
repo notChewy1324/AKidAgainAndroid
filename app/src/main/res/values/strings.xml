@@ -1,13 +1,25 @@
 <resources>
+    //This controls the main screen and global login and signup buttons
     <string name="app_name">A Kid Again</string>
     <string name="Mainlogo">MainLogo</string>
     <string name="SignUpButton1">Sign Up</string>
     <string name="LoginButton1">Login</string>
     <string name="SignUpButton2">Sign Up</string>
     <string name="LoginButton2">Login</string>
+    //controls the login page
     <string name="resetpassword">Reset Password</string>
     <string name="LoginTitleText">Login Here</string>
     <string name="password_login">Password</string>
     <string name="email_login">Email</string>
     <string name="ErrorTextDisplay_Login">  </string>
+    //controls the signup page
+    <string name="SignUpTitleText">Sign Up Here</string>
+    <string name="password_signup">Password</string>
+    <string name="email_signup">Email</string>
+    <string name="ErrorTextDisplay_Signup">  </string>
+    //controls the home page
+    <string name="Moments">Moments</string>
+    <string name="Chapters">Chapters</string>
+    <string name="Community">Community</string>
+    <string name="Quote">Quote</string>
 </resources>
