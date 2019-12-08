@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">AKidAgainAndroid</string>
-    <string name="mainlogo">MainLogo</string>
-    <string name="SignUp">SignUpButton</string>
+    <string name="app_name">A Kid Again</string>
+    <string name="Mainlogo">MainLogo</string>
+    <string name="SignUpButton1">Sign Up</string>
+    <string name="LoginButton1">Login</string>
+    <string name="SignUpButton2">Sign Up</string>
+    <string name="LoginButton2">Login</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="LoginTitleText">Login Here</string>
+    <string name="password_login">Password</string>
+    <string name="email_login">Email</string>
+    <string name="ErrorTextDisplay_Login">  </string>
 </resources>
