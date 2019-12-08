@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:srcCompat="@drawable/MainLogo" />
+        app:srcCompat="@drawable/mainlogo" />
 
     <Button
         android:id="@+id/button3"
