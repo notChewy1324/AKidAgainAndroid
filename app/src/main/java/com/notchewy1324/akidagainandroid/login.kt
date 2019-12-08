@@ -10,21 +10,21 @@ class login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        lateinit var auth: FirebaseAuth
 
         //LoginAuth
-        //Takes us to login page
+        lateinit var auth: FirebaseAuth
         button3.setOnClickListener {
-            auth.createUserWithEmailAndPassword(editText2.toString(), editText.toString())
+            auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
-                        textView2.text = "Logged In"
+                        // Sign in success
+                        textView2.setText("Login Successful")
                     } else {
                         // If sign in fails, display a message to the user.
-                        textView2.text = "Login Failed. Please cheack your email or password."
+                        textView2.setText("Login Failed. Please check your email or password.")
                     }
                 }
         }
     }
 }
+
