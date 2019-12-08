@@ -48,10 +48,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.2.0'
     implementation 'com.google.firebase:firebase-messaging:20.0.1'
     //implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
-    implementation 'com.google.firebase:firebase-inappmessaging-ktx:19.0.2'
-    implementation 'com.google.firebase:firebase-inappmessaging-display-ktx:19.0.2'
+    //implementation 'com.google.firebase:firebase-inappmessaging-ktx:19.0.2'
+    //implementation 'com.google.firebase:firebase-inappmessaging-display-ktx:19.0.2'
     implementation 'com.google.firebase:firebase-config-ktx:19.0.3'
-    implementation 'com.google.firebase:firebase-inappmessaging-ktx:19.0.2'
+    //implementation 'com.google.firebase:firebase-inappmessaging-ktx:19.0.2'
 }
 
 //Firebase stuff
