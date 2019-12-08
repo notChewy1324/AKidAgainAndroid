@@ -10,11 +10,11 @@ class login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
         //LoginAuth
         lateinit var auth: FirebaseAuth
         button3.setOnClickListener {
-            auth.signInWithEmailAndPassword(email, password)
+            textView2.setText("Login Successful")
+            auth.signInWithEmailAndPassword(LoginEmail.toString(), LoginPassword.toString())
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         // Sign in success
