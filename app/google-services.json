@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "908063988771-c9b5bosqnvt286dfvvsbqup13ptuuuku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.notchewy1324.akidagainandroid",
+            "certificate_hash": "d95cab8623da1556af4b439ac0baca1dd72619b0"
+          }
+        },
+        {
           "client_id": "908063988771-euahq80cvtjua35kh2orolvis58nsdnr.apps.googleusercontent.com",
           "client_type": 3
         }
