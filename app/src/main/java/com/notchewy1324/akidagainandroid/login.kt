@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_login.*
 //import org.junit.experimental.results.ResultMatchers.isSuccessful
 //import sun.jvm.hotspot.utilities.IntArray
+import kotlinx.android.synthetic.main.activity_login.Button
 
 
 class login : AppCompatActivity() {
@@ -22,7 +23,7 @@ class login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         //Firebase Vars
-        val auth: FirebaseAuth = FirebaseAuth.getInstance()
+        var auth = FirebaseAuth.getInstance()
 
         Button.setOnClickListener {
             FirebaseAuth.AuthStateListener {
