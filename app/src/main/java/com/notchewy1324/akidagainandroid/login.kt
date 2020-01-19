@@ -1,12 +1,19 @@
 package com.notchewy1324.akidagainandroid
 
-import androidx.appcompat.app.AppCompatActivity
+import android.R.attr.password
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_login.*
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_login.LoginEmail
-import kotlinx.android.synthetic.main.activity_login.LoginPassword
+import com.google.firebase.auth.FirebaseUser
+//import jdk.nashorn.internal.runtime.ECMAException.getException
+import kotlinx.android.synthetic.main.activity_login.*
+//import org.junit.experimental.results.ResultMatchers.isSuccessful
+//import sun.jvm.hotspot.utilities.IntArray
+
 
 class login : AppCompatActivity() {
 
@@ -19,15 +26,17 @@ class login : AppCompatActivity() {
 
         Button.setOnClickListener {
             FirebaseAuth.AuthStateListener {
-                auth.signInWithEmailAndPassword(LoginEmail.text.toString(), LoginPassword.text.toString())
+                auth.signInWithEmailAndPassword(LoginEmail.toString(), LoginPassword.toString())
                     .addOnCompleteListener(this) {
                         when {
                             it.isSuccessful -> {
                                 // Sign in success, update UI with the signed-in user's information
+                                Toast.makeText(baseContext, "Authentication Successful.",
+                                    Toast.LENGTH_SHORT).show()
                             }
                             else -> {
                                 // If sign in fails, display a message to the user.
-                                Toast.makeText(baseContext, "Authentication failed.",
+                                Toast.makeText(baseContext, "Authentication Failed.",
                                     Toast.LENGTH_SHORT).show()
                             }
                         }
