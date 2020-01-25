@@ -1,20 +1,18 @@
 package com.notchewy1324.akidagainandroid
 
-import android.R.attr.password
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-//import jdk.nashorn.internal.runtime.ECMAException.getException
 import kotlinx.android.synthetic.main.activity_login.*
-//import org.junit.experimental.results.ResultMatchers.isSuccessful
-//import sun.jvm.hotspot.utilities.IntArray
 import kotlinx.android.synthetic.main.activity_login.Button
+import android.widget.EditText
 
+
+private val FirebaseAuth.isSuccessful: Any
+    get() {
+        return Any()
+    }
 
 class login : AppCompatActivity() {
 
@@ -27,10 +25,10 @@ class login : AppCompatActivity() {
 
         Button.setOnClickListener {
             FirebaseAuth.AuthStateListener {
-                auth.signInWithEmailAndPassword(LoginEmail.toString(), LoginPassword.toString())
+                auth.signInWithEmailAndPassword(LoginEmail, LoginPassword)
                     .addOnCompleteListener(this) {
                         when {
-                            it.isSuccessful -> {
+                            it.isSuccessful as Boolean -> {
                                 // Sign in success, update UI with the signed-in user's information
                                 Toast.makeText(baseContext, "Authentication Successful.",
                                     Toast.LENGTH_SHORT).show()
@@ -45,4 +43,12 @@ class login : AppCompatActivity() {
             }
         }
     }
+}
+
+private fun Unit.addOnCompleteListener(login: login, function: () -> Unit) {
+
+}
+
+private fun FirebaseAuth.signInWithEmailAndPassword(LoginEmail: EditText?, LoginPassword: EditText?) {
+
 }
