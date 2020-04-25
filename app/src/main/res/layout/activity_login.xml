@@ -32,7 +32,8 @@
     <TextView
         android:id="@+id/LoginDisplayText"
         android:layout_width="358dp"
-        android:layout_height="141dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/LoginTextDisplay"
         android:textColor="#F44336"
         app:layout_constraintBottom_toBottomOf="parent"
