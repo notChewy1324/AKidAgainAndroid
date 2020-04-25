@@ -18,21 +18,8 @@ class login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         loginButton.setOnClickListener {
-            mAuth!!.createUserWithEmailAndPassword(LoginEmail.toString(), LoginPassword.toString())
-                .addOnCompleteListener(
-                    this
-                ) { task ->
-                    if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
-                        LoginDisplayText.text = "Sign up was successful"
-                        setContentView(R.layout.activity_home)
-                    } else {
-                        // If sign in fails, display a message to the user.
-                        LoginDisplayText.text = "Sign up has failed"
-                    }
-
-                    // ...
-                }
+            LoginDisplayText.text = "CLICKED"
+            
         }
     }
 }
