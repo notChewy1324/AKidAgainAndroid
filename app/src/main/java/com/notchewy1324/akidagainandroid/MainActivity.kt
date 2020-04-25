@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Program Logged-In Function
+
         //Takes us to login page
         button.setOnClickListener {
             setContentView(R.layout.activity_login)
